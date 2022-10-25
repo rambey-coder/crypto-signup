@@ -46,12 +46,14 @@ body {
     margin: auto;
 }
 
+
+
 .img-container > img {
-    width: 100px;
+    width: 150px;
     position: absolute;
 }
 
-.img-container > img:nth-child(1) {
+.bytom {
     right: 0;
     bottom: 10rem;
 }
