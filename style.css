@@ -7,14 +7,153 @@
 body {
     font-family: 'Oxanium', cursive;
     /* background: #070f41; */
-    background: #020204;
+    /* background: #020204; */
+    background: #f3f6f8;
+    /* height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
 }
 
 .img-container {
+    width: 60%;
     background: url(./assets/ethereum-blockchain.png);
+    background-position: center;
     background-size: cover;
 }
 
+.forms {
+    width: 40%;
+    background: #ffffff;
+    padding: 20px 15px;
+    filter: drop-shadow(1px 1px 8px #02020414);
+}
+
+.form-container {
+    width: 90%;
+    margin: auto;
+}
+
 .img-container > img {
+    width: 30px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.icon > img {
     width: 20px;
+}
+
+.google {
+    padding: 8px 20px;
+    background: transparent;
+    border: 1px solid #34a853;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    cursor: pointer;
+}
+
+.meta {
+    padding: 8px 20px;
+    border: 1px solid #e17624;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    cursor: pointer;
+}
+
+.eth > img {
+    width: 13px;
+}
+
+.eth {
+    padding: 8px 20px;
+    border: 1px solid #141414;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    cursor: pointer;
+}
+
+.brave {
+    padding: 8px 20px;
+    border: 1px solid #FB542B;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    cursor: pointer;
+}
+
+.form-container > h1 {
+    color: #020204;
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.form-container > p {
+    color: #020204;
+    margin-bottom: 20px;
+}
+
+.or {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+}
+
+.or > hr {
+    width: 100%;
+    
+}
+
+.or > p {
+    color: #020204;
+    font-size: 14px;
+}
+
+.input-cont {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.input-cont > input {
+    padding: 15px 20px;
+    outline: 0;
+    border: 0;
+    border-radius: 4px;
+    background: #fb552b0c;
+    color: #f46a00;
+    font-weight: 400;
+}
+
+::placeholder {
+    color: #f46a00;
+    font-weight: 400;
+    font-size: 12px;
 }
