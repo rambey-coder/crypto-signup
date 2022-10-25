@@ -8,11 +8,13 @@ body {
     font-family: 'Oxanium', cursive;
     /* background: #070f41; */
     /* background: #020204; */
-    background: #f3f6f8;
-    /* height: 100vh;
+    /* background: #f3f6f8; */
+    /* background: #fff4f1; */
+    background: #e8e3ff;
+    height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center; */
+    justify-content: center;
 }
 
 .container {
@@ -24,9 +26,12 @@ body {
 
 .img-container {
     width: 60%;
+    height: 100vh;
     background: url(./assets/ethereum-blockchain.png);
     background-position: center;
     background-size: cover;
+    position: relative;
+    display: flex;
 }
 
 .forms {
@@ -42,7 +47,13 @@ body {
 }
 
 .img-container > img {
-    width: 30px;
+    width: 100px;
+    position: absolute;
+}
+
+.img-container > img:nth-child(1) {
+    right: 0;
+    bottom: 10rem;
 }
 
 .logo-container {
@@ -114,7 +125,7 @@ body {
 }
 
 .form-container > p {
-    color: #020204;
+    color: #48349f;
     margin-bottom: 20px;
 }
 
@@ -147,13 +158,35 @@ body {
     outline: 0;
     border: 0;
     border-radius: 4px;
-    background: #fb552b0c;
-    color: #f46a00;
+    background: #8c72ff23;
+    color: #8c72ff;
     font-weight: 400;
+    outline: 1px solid transparent;
+    transition: all .7s ease;
+}
+
+.input-cont > input:focus {
+    outline: 1px solid #8c72ff;
 }
 
 ::placeholder {
-    color: #f46a00;
+    color: #8c72ff;
     font-weight: 400;
     font-size: 12px;
+}
+
+button {
+    background: #48349f;
+    color: #fff;
+    padding: 20px;
+    border: 0;
+    border-radius: 4px;
+    font-size: 15px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all .8s ease;
+}
+
+button:hover {
+    background: #48349fbb;
 }
